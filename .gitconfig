@@ -1,0 +1,23 @@
+[alias]
+    pl = pull --rebase
+    pretty-graph = log --pretty=format:'%h %s' --graph
+    lg = log --color --pretty=format:'%Cred%h %Cgreen%<(13)%cr%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit
+    ll = log --pretty=format:'%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]' --decorate --numstat
+    ls = log --pretty=format:'%C(yellow)%h%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]' --decorate
+    lds = log --pretty=format:'%C(yellow)%h\\\\ %ad%Cred%d\\\\ %Creset%s%Cblue\\\\ [%cn]' --decorate --date=short
+    le = log --oneline --decorate
+    fl = log -u
+    upd-rb = remote update origin --prune
+    alias = config --get-regexp ^alias\\\\.
+    st = status
+[user]
+    name = Michael Slattery
+    email = slattery_michael@bah.com
+[merge]
+    tool = kdiff3
+[diff]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[difftool "kdiff3"]
+    path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
