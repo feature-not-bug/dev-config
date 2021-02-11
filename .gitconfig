@@ -11,8 +11,8 @@
     alias = config --get-regexp ^alias\\\\.
     st = status
 [user]
-    name = Michael Slattery
-    email = slattery_michael@bah.com
+    name = <name_goes_here>
+    email = <email_goes_here>
 [merge]
     tool = kdiff3
 [diff]
